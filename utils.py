@@ -4,7 +4,7 @@ from thefuzz import fuzz
 import re
 
 
-def load_doc(path: str):
+def load_doc(path):
     dfs = tb.read_pdf(path, pages="all", stream=True)
     return dfs
 
@@ -34,7 +34,7 @@ def extract_titles(path: str):
                     lst.append(name)
         # print("\n")
         if len(lst) >= 3:
-            print(lst)
+            # print(lst)
             dic_list.append(dic)
             dump = docs[lst]
             if (
