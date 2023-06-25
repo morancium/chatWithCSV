@@ -344,3 +344,63 @@ print(sum_of_first_5_debits)
 ```
 2023-06-25 20:49:50 [INFO] Answer: 70.0
 2023-06-25 20:49:50 [INFO] Executed in: 13.424766063690186s
+2023-06-25 21:09:38 [INFO] Running PandasAI with openai LLM...
+2023-06-25 21:09:38 [INFO] Prompt ID: 7d457c39-ff4c-4e02-b018-6384935827a3
+2023-06-25 21:09:38 [INFO] Using cached response
+2023-06-25 21:09:38 [INFO] 
+Code running:
+```
+print(df.info())
+print(df.head())
+```
+2023-06-25 21:09:38 [INFO] Answer: <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 69 entries, 0 to 68
+Data columns (total 6 columns):
+ #   Column                 Non-Null Count  Dtype  
+---  ------                 --------------  -----  
+ 0   Date                   69 non-null     object 
+ 1   Transaction Reference  69 non-null     object 
+ 2   Ref.No./Chq.No.        69 non-null     object 
+ 3   Credit                 69 non-null     float64
+ 4   Debit                  69 non-null     float64
+ 5   Balance                69 non-null     float64
+dtypes: float64(3), object(3)
+memory usage: 3.4+ KB
+None
+       Date                              Transaction Reference Ref.No./Chq.No.  Credit  Debit  Balance
+0  01-04-23   UPI/DR/309243600490/UTTAM SI/PYTM/paytmqr281/UPI               -     0.0   40.0   120.72
+1  02-04-23     UPI/DR/309262447212/Savita/PYTM/paytmqr281/UPI               -     0.0   10.0   110.72
+2  02-04-23   UPI/CR/309214967931/NAND KIS/IBKL/nandkishor/UPI               -  2500.0    0.0  2610.72
+3  02-04-23  UPI/DR/309283622484/RISHABH /SBIN/rishabh.81/P...               -     0.0  150.0  2460.72
+4  03-04-23   UPI/DR/309392014750/Prabal  /SBIN/prabalsahu/UPI               -     0.0  140.0  2320.72
+2023-06-25 21:09:38 [INFO] Executed in: 0.018087148666381836s
+2023-06-25 21:09:52 [INFO] Running PandasAI with openai LLM...
+2023-06-25 21:09:52 [INFO] Prompt ID: 25b90a26-8d24-4c40-9e47-6c50560c437e
+2023-06-25 21:09:52 [INFO] Using cached response
+2023-06-25 21:09:52 [INFO] 
+Code running:
+```
+print(df.info())
+print(df.head())
+```
+2023-06-25 21:09:52 [INFO] Answer: <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 69 entries, 0 to 68
+Data columns (total 6 columns):
+ #   Column                 Non-Null Count  Dtype  
+---  ------                 --------------  -----  
+ 0   Date                   69 non-null     object 
+ 1   Transaction Reference  69 non-null     object 
+ 2   Ref.No./Chq.No.        69 non-null     object 
+ 3   Credit                 69 non-null     float64
+ 4   Debit                  69 non-null     float64
+ 5   Balance                69 non-null     float64
+dtypes: float64(3), object(3)
+memory usage: 3.4+ KB
+None
+       Date                              Transaction Reference Ref.No./Chq.No.  Credit  Debit  Balance
+0  01-04-23   UPI/DR/309243600490/UTTAM SI/PYTM/paytmqr281/UPI               -     0.0   40.0   120.72
+1  02-04-23     UPI/DR/309262447212/Savita/PYTM/paytmqr281/UPI               -     0.0   10.0   110.72
+2  02-04-23   UPI/CR/309214967931/NAND KIS/IBKL/nandkishor/UPI               -  2500.0    0.0  2610.72
+3  02-04-23  UPI/DR/309283622484/RISHABH /SBIN/rishabh.81/P...               -     0.0  150.0  2460.72
+4  03-04-23   UPI/DR/309392014750/Prabal  /SBIN/prabalsahu/UPI               -     0.0  140.0  2320.72
+2023-06-25 21:09:52 [INFO] Executed in: 0.012997150421142578s
