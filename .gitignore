@@ -2,3 +2,6 @@ exl
 cache
 pdfs
 .env
+app.txt
+pandasai.log
+.streamlit
