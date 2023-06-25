@@ -1,0 +1,7 @@
+2023-06-25 19:47:22 [WARNING] Got stderr: Jun 25, 2023 7:47:16 PM org.apache.pdfbox.pdmodel.font.FileSystemFontProvider loadDiskCache
+WARNING: New fonts found, font cache will be re-built
+Jun 25, 2023 7:47:16 PM org.apache.pdfbox.pdmodel.font.FileSystemFontProvider <init>
+WARNING: Building on-disk font cache, this may take a while
+Jun 25, 2023 7:47:17 PM org.apache.pdfbox.pdmodel.font.FileSystemFontProvider <init>
+WARNING: Finished building on-disk font cache, found 456 fonts
+
