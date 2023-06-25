@@ -473,3 +473,46 @@ None
 3  03-02-23   UPI/DR/303401198885/ABHISHEK/YESB/q048383499/UPI               -     0.0   20.0  5426.72
 4  03-02-23    UPI/DR/303403872252/SHAHJAD/KARB/q201536469/UPI               -     0.0   10.0  5416.72
 2023-06-25 21:57:44 [INFO] Executed in: 0.15281963348388672s
+2023-06-25 21:57:58 [INFO] Running PandasAI with openai LLM...
+2023-06-25 21:57:58 [INFO] Prompt ID: c3634701-49c9-4b62-9a5a-019f4656ea3f
+2023-06-25 21:58:05 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# read the dataframe from a csv file
+df = pd.read_csv('bank_transactions.csv')
+
+# convert the 'Date' column to datetime format
+df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%y')
+
+# sort the dataframe by date
+df = df.sort_values(by='Date')
+
+# calculate the final bank balance
+final_balance = df['Balance'].iloc[-1]
+
+print(final_balance)
+                        ```
+                    
+2023-06-25 21:58:05 [INFO] 
+Code running:
+```
+df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%y')
+final_balance = df['Balance'].iloc[-1]
+print(final_balance)
+```
+2023-06-25 21:58:05 [INFO] Answer: 82.72
+2023-06-25 21:58:05 [INFO] Executed in: 6.69545841217041s
+2023-06-25 22:15:19 [INFO] Running PandasAI with openai LLM...
+2023-06-25 22:15:19 [INFO] Prompt ID: bc61f3f6-3fa7-4697-a20f-abacfe6c0e19
+2023-06-25 22:15:19 [INFO] Using cached response
+2023-06-25 22:15:19 [INFO] 
+Code running:
+```
+df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%y')
+final_balance = df['Balance'].iloc[-1]
+print(final_balance)
+```
+2023-06-25 22:15:19 [INFO] Answer: 82.72
+2023-06-25 22:15:19 [INFO] Executed in: 0.04473090171813965s
